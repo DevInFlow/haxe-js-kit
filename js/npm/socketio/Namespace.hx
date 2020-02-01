@@ -13,8 +13,8 @@ class Namespace implements Dynamic{
 
   function use(fn: Socket -> MiddlewareNext -> Void): Namespace;
 
-  /*public var adapter: Adapter;
-  public var handshake (default,null) : HandshakeData; 
+  public var adapter: Adapter;
+  // public var handshake (default,null) : HandshakeData; 
   public var broadcast (default,null) : Namespace;
 
 //  public static function SocketNamespace (socket : Dynamic, name : String) : Void;
@@ -41,7 +41,7 @@ class Namespace implements Dynamic{
   public function join(room:String, callback: Callback0):Namespace;
   public function leave(room:String):Namespace;
 
-  /*@:native("in")
+  @:native("in")
   public inline function in_(room:String):Namespace return untyped this["in"](room);
   public function to(room: String):Namespace;
   
@@ -58,7 +58,7 @@ class Namespace implements Dynamic{
 extern
 class Adapter
 {
-  public var rooms: DynamicObject<Array<String>>;*/
+  public var rooms: DynamicObject<Array<String>>;
 }
 
 

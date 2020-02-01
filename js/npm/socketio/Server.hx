@@ -23,5 +23,6 @@ implements npm.Package.Require<"socket.io","1.0">
 
 typedef ServerOpts = {
 	?serveClient: Bool,
-	?path: String
+	?path: String,
+	?transport:Array<String>
 }
